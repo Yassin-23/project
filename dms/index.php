@@ -1,3 +1,10 @@
+<?php
+  include('connection.php');
+  session_start();
+?>
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,14 +26,14 @@
     <h5 class="card-title">login</h5>
     <form action="backend.php" method="POST">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">username</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" placeholder="username">
+    <label for="exampleInputEmail1" class="form-label">email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="email">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="password">
   </div>
-  <button type="submit" class="btn btn-primary" name="login">Submit</button><br>
+  <button type="submit" class="btn btn-primary" name="login">login</button><br>
   <label class="form-check-label" for="exampleCheck1">No account register?<a href="register.php" class=" text-body-primary text-decoration-none" >here</a></label>
 </form>
   </div>
